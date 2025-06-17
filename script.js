@@ -56,50 +56,6 @@ skillButtons.forEach(button => {
     });
   });
 
-
-//rolagem por section
-let currentSectionIndex = 0;
-let isScrolling = false;
-
-const sections = document.querySelectorAll("main > section");
-const lastSectionIndex = sections.length - 1;
-
-function scrollToSection(index) {
-  if (index >= 0 && index <= lastSectionIndex) {
-    isScrolling = true;
-    sections[index].scrollIntoView({ behavior: "smooth" });
-
-    setTimeout(() => {
-      isScrolling = false;
-    }, 1000);
-  }
-}
-
-window.addEventListener("wheel", (event) => {
-  if (isScrolling) return;
-
-  const deltaY = event.deltaY;
-
-  // Se já está na última seção e rolando para baixo, libera scroll para footer
-  if (currentSectionIndex === lastSectionIndex && deltaY > 0) {
-    return; // não trava, deixa scroll normal fluir até o footer
-  }
-
-  event.preventDefault(); // trava o scroll padrão
-
-  if (deltaY > 0 && currentSectionIndex < lastSectionIndex) {
-    currentSectionIndex++;
-    scrollToSection(currentSectionIndex);
-  } else if (deltaY < 0 && currentSectionIndex > 0) {
-    currentSectionIndex--;
-    scrollToSection(currentSectionIndex);
-  }
-}, { passive: false });
-
-window.addEventListener("load", () => {
-  scrollToSection(currentSectionIndex);
-});
-
 //formulario com EMAILJS
 
 document.getElementById('form-contato').addEventListener('submit', function (e) {
