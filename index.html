@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&family=Righteous&display=swap" rel="stylesheet">  <script src="js/main.js"></script>
+   <script src="js/main.js"></script> 
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("NHXIV5wYd-vYrXFVe"); // sua Public Key
+  })();
+</script>   <title>BD Labs</title>
+</head>
+<body onload="scrollToSection()">
+    <header class="header" style="display: flex;" id="header">
+        <div class="logo">
+          <a href="#hero">
+             <img src="assets/bd_logo.png" alt="bd_logo" id="logo">
+          </a>
+          </div>
+<!-- Botão que abre a sidebar -->
+        <button class="toggleSidebar" id="toggleSidebar">☰</button>
+        
+        <nav class="main-nav">
+            <a href="#hero" id="home">Início</a>
+            <a href="#about" id="sobre">Sobre</a>
+            <a href="#services" id="servicos">Serviços</a>
+            <a href="#projects" id="projetos">Projetos</a>
+            <a href="#contact" id="contatos">Contatos</a>
+        </nav>
+     <nav id="sidebar" class="hidden">
+  <a href="#hero">Início</a>
+  <a href="#about" id="sobre">Sobre</a>
+  <a href="#services" id="servicos">Serviços</a>
+  <a href="#projects" id="projetos">Projetos</a>
+  <a href="#contact" id="contatos">Contatos</a>
+</nav>
+  
+    </header>
+    <main>
+        <section id="hero" class="hero">
+          <div class="hero-content">
+            <h1 id="hero">Soluções <br> digitais <br> com precisão <br> e propósito</h1> 
+            <p>Transformando ideias em código <br> com foco em performance e design</p>
+            <a href="#projects" class="btn">Ver Portfólio</a>
+            <a href="#services" class="btn-services">Ver Serviços</a>
+</div>
+           
+      <div class="hero-skills">
+  <button class="skill-btn" data-color="#264de4">HTML</button>
+  <button class="skill-btn" data-color="#e34c26">CSS</button>
+  <button class="skill-btn" data-color="#f0db4f">JavaScript</button>
+  <button class="skill-btn" data-color="#61dbfb">React</button>
+  <button class="skill-btn" data-color="#3178c6">TypeScript</button>
+  <button class="skill-btn" data-color="#6e57e0">UI/UX</button>
+</div>
+
+
+        </section>
+
+        <section id="about" class="about" class="reveal">
+             <div class="bio">
+               <img src="assets/me.png" alt="Breno Daniel" id="img-me" class="reveal"/>
+               <div>
+                <h2>Quem sou eu</h2>
+                 <p> Sou Breno Daniel desenvolvedor com visão criativa, gosto de interfaces ousadas, animações suaves e experiências digitais inovadoras.</p>
+                 <p> Minha missão é transformar ideias em aplicações web que encantam e funcionam. Curioso por natureza, aprendo sempre algo novo.</p>
+                 <p>desenvolvedor web especializado em UI/UX Design, <br> Frameworks como React, <br>
+                     Front-End e otimizações <br> Front-End Mobile e Web tecnologias</p>
+               </p>              
+              </div>
+             </div>
+        </section>
+
+        <section id="services" class="services">
+ <div class="service">
+  <h2>O que eu faço</h2>
+  <p class="intro">
+      Transformo ideias em interfaces modernas, responsivas e acessíveis.<br />
+      Como desenvolvedor front-end, me especializo em criar experiências digitais que combinam design elegante com performance e usabilidade.
+    </p>
+
+    <ul class="atividades">
+      <li  class="reveal">Desenvolvimento de interfaces com HTML, CSS, JavaScript, React e TypeScript</li>
+      <li  class="reveal">Criação de páginas responsivas e adaptadas para diferentes dispositivos</li>
+      <li  class="reveal">Integração com APIs e dados dinâmicos</li>
+      <li  class="reveal">Otimização de performance e acessibilidade</li>
+      <li  class="reveal">Aplicação de boas práticas de UI/UX no front-end</li>
+    </ul>
+</div>
+</section>
+
+  <section id="projects" class="projects">
+    <div class="projects-bg">
+  <h2>Projetos em Destaque</h2>
+  <div class="project-grid">
+   <div class="project-card">
+     <!-- <img src="thumb-projeto1.jpg" alt="Projeto 1" />
+    --> 
+    <h3>Ops! essa área ainda não está disponivel.
+    </h3>
+      <p>Aguarde Novidades!!!</p>
+      <a href="#">Ver Projeto</a>
+    </div>
+   <div class="project-card">
+     <!-- <img src="thumb-projeto1.jpg" alt="Projeto 1" />
+    --> 
+    <h3>Ops! essa área ainda não está disponivel.
+    </h3>
+      <p>Aguarde Novidades!!!</p>
+      <a href="#">Ver Projeto</a>
+    </div>
+    <div class="project-card">
+     <!-- <img src="thumb-projeto1.jpg" alt="Projeto 1" />
+    --> 
+    <h3>Ops! essa área ainda não está disponivel.
+    </h3>
+      <p>Aguarde Novidades!!!</p>
+      <a href="#">Ver Projeto</a>
+    </div>
+    <!-- mais cards -->
+  </div>
+  </div>
+</section>
+
+  <section id="contact" class="contact">
+    <div class="contact-bg">
+ <div class="contact-container">
+    
+    <!-- LADO ESQUERDO -->
+    <div class="contact-info">
+      <h2>Vamos trabalhar juntos?</h2>
+      <p>Conecte-se comigo nas redes:</p>
+      <ul class="social-links">
+       <a href="https://github.com/Breno-Daniel" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://linkedin.com/in/breno-daniel-silva-gonçalves-25843a285" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://x.com/Bd__Lbs" target="_blank"><i class="fab fa-x-twitter"></i>X</a>
+    <a href="https://www.instagram.com/Bd__Lbs" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="mailto:bdlabscontact@gmail.com"><i class="fas fa-envelope"></i> E-mail</a>
+    <a href="https://wa.me/5567999329306" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </ul>
+    </div>
+
+    <!-- LADO DIREITO -->
+    <div class="contact-form">
+<form id="form-contato">
+  <input type="text" name="nome" placeholder="Seu nome" required />
+  <input type="email" name="email" placeholder="Seu e-mail" required />
+  <textarea name="mensagem" placeholder="Mensagem..." required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer>
+  <p>&copy; 2025 Breno Daniel Labs. Todos os direitos reservados.</p>
+</footer>
+<div id="modal-message" class="modal-message">
+  <div class="modal-content" id="modal-content">Mensagem aqui</div>
+</div>
+<!-- Importando JS -->
+<script src="script.js" defer></script>
+</body>
+</html>
